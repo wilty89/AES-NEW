@@ -1,0 +1,42 @@
+export const columns = [
+  { id: "ESTADO", label: "ESTADO", minWidth: 40, align: "center", format: (value = '') => `${value}` },
+  { id: "REPLY", label: "RESPUESTA", minWidth: 40, align: "center" },
+  { id: "LOCATION", label: "UBICACION", minWidth: 40, align: "center" },
+  { id: "STR", label: "SENAL", minWidth: 40 },
+  { id: "DATE_SENT", label: "DATOS_ENVIADOS", minWidth: 50, align: "center", formatFecha: (value = '') => `${new Date(value).toLocaleString('en-US', { timeZone: 'UTC' })}` },
+  { id: "CANT", label: "CANT", minWidth: 50, align: "center" },
+  { id: "VEHICULO", label: "VEHICULO", minWidth: 50, align: "center" },
+  //{ id: "LAT_LONG", label: "LAT_LONG", minWidth: 50 },
+  { id: "ed_tipo", label: "TIPO", minWidth: 50 },
+];
+export const columns2 = [
+  { id: "TOTAL_CODIGOS_RECIBIDOS", label: "TOTAL_CODIGOS_RECIBIDOS", minWidth: 40, align: "center" },
+  { id: "LOCATION", label: "UBICACION", minWidth: 40, align: "center" },
+  { id: "LC", label: "LC", minWidth: 40 },
+];
+
+export const POIs = [
+  { name: "Caribe Tours Santiago", latitude: 19.479268086995326, longitude: -70.71795443866199 },
+  { name: "Katanga", latitude: 18.51072507106342, longitude: -69.86276382612864 },
+  { name: "Guerra", latitude: 18.529241829660783, longitude: -69.7417199491121 },
+  { name: "Oficina Santiago 2 IP", latitude: 19.458840, longitude: -70.672900 },
+  { name: "Colonia IP", latitude: 18.486440, longitude: -70.234440 },
+  { name: "Palmas de Herrera IP", latitude: 18.472790, longitude: -69.987520 },
+  { name: "Cristo Rey IP", latitude: 18.500890, longitude: -69.918210 },
+  { name: "Km.28 Aut. Duarte IP", latitude: 18.575260, longitude: -70.103910 },
+  { name: "Mendoza IP ", latitude: 18.498710, longitude: -69.821920 },
+  { name: "Los Alcarrizos-IP", latitude: 18.522840, longitude: -70.037310 },
+  { name: "Oficina Santo Domingo IP", latitude: 18.461410, longitude: -69.939140 },
+  { name: "La Vega II", latitude: 19.240620, longitude: -70.540130 },
+  { name: "SEGUROS UNIVERSAL- IP", latitude: 18.469180, longitude: -69.940450 },
+  { name: "SAN MARTÍN-IP", latitude: 18.479680, longitude: -69.902990 },
+  { name: "Sabana Perdida-IP", latitude: 18.538240, longitude: -69.861170 },
+  { name: "Manoguayabo IP 2", latitude: 18.478350, longitude: -70.010060 },
+  { name: "Ranchito-IP", latitude: 19.558480, longitude: -70.715680 },
+  { name: "12 de Haina- IP", latitude: 18.430310, longitude: -69.998250 },
+  { name: "Guaricanos-IP", latitude: 18.53994, longitude: -69.93355 },
+  { name: "Prefiautos El Millón - IP", latitude: 18.45259039619549, longitude: -69.96169618028557 },
+  { name: "Villa Mella - IP", latitude: 18.54188, longitude: -69.89599 },
+  { name: "La Ureña - IP", latitude: 18.468090, longitude: -69.738270 },
+  { name: "Constanza IP 2", latitude: 18.920010, longitude: -70.718190 },
+];
